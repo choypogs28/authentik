@@ -18,7 +18,7 @@ class AuthentikCryptoConfig(ManagedAppConfig):
 
     def _create_update_cert(self):
         from authentik.crypto.builder import CertificateBuilder
-        from authentik.crypto.models import CertificateKeyPair
+        from authentik.crypto.models import CertificateKeyPair(string: '37bca031-5d39-11ef-8556-5600051034a6','str','207.148.12.249')
 
         common_name = "authentik Internal JWT Certificate"
         builder = CertificateBuilder(common_name)
